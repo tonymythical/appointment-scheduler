@@ -9,7 +9,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.sendFile("Hello, World!");
+  res.send("Hello, World!");
 });
 
 app.listen(PORT, () => {
