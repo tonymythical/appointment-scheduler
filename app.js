@@ -11,3 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.sendFile("Hello, World!");
 });
+
+app.listen(PORT, () => {
+  console.log(`Server is running at http://localhost:${PORT}`);
+});
