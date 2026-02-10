@@ -1,5 +1,4 @@
 document.getElementById("appointment-form").onsubmit = () => {
-
     clearErrors();
     let isValid = true;
 
@@ -20,7 +19,7 @@ document.getElementById("appointment-form").onsubmit = () => {
 
 function clearErrors(){
     let errors = document.getElementsByClassName("err");
-    for(let i=0; i<errors.length; i++){
+    for(let i = 0; i < errors.length; i++){
         errors[i].style.display = "none";
     }
 }
