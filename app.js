@@ -19,6 +19,10 @@ app.get('/', (req, res) => {
   res.sendFile(`${import.meta.dirname}/views/home.html`);
 });
 
+app.get('/confirmation', (req, res) => {
+  res.sendFile(`${import.meta.dirname}/views/confirmation.html`);
+})
+
 app.get('/admin', (req, res) => {
   res.send(appointments);
 });
