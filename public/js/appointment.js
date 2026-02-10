@@ -1,7 +1,7 @@
 document.getElementById("appointment-form").onsubmit = () => {
 
     clearErrors();
-    let isValid = false;
+    let isValid = true;
 
     let fname = document.getElementById("fname").value.trim();
     if(!fname){
