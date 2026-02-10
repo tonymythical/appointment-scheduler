@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appointment Scheduler</title>
+
+    <!-- Link Styles -->
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <form>
+    <form id="appointment-form">
         <label>First Name:
-            <span id="err-fname">*First Name is Required</span>
+            <span class="err" id="err-fname">*First Name is Required*</span>
         </label>
-        <input type="text">
+        <input type="text" id="fname" name="fname">
 
         <label>Last Name:
-            <span id="err-lname">*Last Name is Required</span>
+            <span class="err" id="err-lname">*Last Name is Required*</span>
         </label>
-        <input  type="text">
+        <input  type="text" id="lname" name="lname">
 
         <label>Date:
-            <input type="date">
+            <input type="date" id="date" name="date">
         </label>
 
         <label>Time:
-            <input type="time">
+            <input type="time" id="time" name="time">
         </label>
 
-        <button>Submit</button>
+        <button type="submit" id="submit-button">Submit</button>
     </form>
 </body>
 </html>
