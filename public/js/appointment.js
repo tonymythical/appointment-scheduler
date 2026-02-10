@@ -1,6 +1,5 @@
 document.getElementById("appointment-form").onsubmit = () => {
     clearErrors();
-    
     let isValid = true;
 
     let fname = document.getElementById("fname").value.trim();
