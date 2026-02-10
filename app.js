@@ -26,8 +26,8 @@ app.get('/admin', (req, res) => {
 app.post('/submit-appointment', (req, res) => {
   
   const appointment = {
-    fname: req.body.err-fname,
-    lname: req.body.err-lname,
+    fname: req.body.fname,
+    lname: req.body.lname,
     date: req.body.date,
     time: req.body.time,
     timestamp: new Date()
